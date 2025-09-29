@@ -88,6 +88,23 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+.sidebar__options > button {
+    cursor: pointer;
+}
+
+.history-list {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+    justify-items: start;
+    align-items: center;
+}
+
+.history-list > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* Chat */
 
 .chat__wrapper {
