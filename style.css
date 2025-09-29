@@ -59,7 +59,55 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 15rem auto;
     height: 100vh;
     width: 100vw;
+}
+
+.sidebar__wrapper, .chat__wrapper {
+    padding: 18px;
+}
+
+.header__mobile {
+    display: none;
+}
+
+/* Sidebar */
+
+.sidebar__wrapper {
+    display: grid;
+    grid-template-rows: 1fr 3fr 9fr;
+    background: gray;
+}
+
+.sidebar__options {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+/* Chat */
+
+.chat__wrapper {
+    background: lightgray;
+}
+
+@media (max-width: 768px) {
+    .sidebar__wrapper {
+        display: none;
+    }
+
+    .chat__wrapper {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .header__mobile {
+        display: flex;
+        width: 100%;
+        padding: 18px;
+        justify-content: space-between;
+    }
 }
