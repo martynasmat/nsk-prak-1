@@ -6,36 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <script src="index.js"></script>
-    <header class="header__mobile">
-        <div class="hamburger">HM</div>
-        <div class="logo">logo</div>
-    </header>
     <div class="container">
-        <section class="sidebar__wrapper">
-            <div class="sidebar__logo">logo</div>
-            <div class="sidebar__options">
-                <button class="sidebar__options__btn__new-chat">new chat</button>
-                <button class="sidebar__options__btn__search">search</button>
-                <button class="sidebar__options__btn__new-project">new project</button>
+        <header class="header__mobile">
+            <div class="hamburger">HM</div>
+            <div class="logo">
+                <img src="./assets/logo.png" alt="ChatABC logo">
             </div>
-            <div class="sidebar__history">
-                <h2>History</h2>
-                <div class="history-list">
-                    <a>Creating a responsive web interface</a>
-                    <a>Egg boiling tutorial</a>
-                    <a>Passing university classes</a>
+        </header>
+        <div class="content__wrapper">
+            <div class="sidebar__wrapper">
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="ChatABC logo">
+                </div>
+                <div class="sidebar__options">
+                    <button class="sidebar__options__btn__new-chat">New chat</button>
+                    <button class="sidebar__options__btn__search">Search</button>
+                    <button class="sidebar__options__btn__new-project">New project</button>
+                </div>
+                <div class="sidebar__history">
+                    <h2>History</h2>
+                    <hr class="divider">
+                    <div class="history__list">
+                        <a class="history__item">Creating a responsive web interface</a>
+                        <a class="history__item">Egg boiling tutorial</a>
+                        <a class="history__item">Passing university classes</a>
+                        <a class="history__item">Creating a responsive web interface</a>
+                        <a class="history__item">Egg boiling tutorial</a>
+                        <a class="history__item">Passing university classes</a>
+                        <a class="history__item">Creating a responsive web interface</a>
+                        <a class="history__item">Egg boiling tutorial</a>
+                        <a class="history__item">Passing university classes</a>
+                        <a class="history__item">Passing university classes</a>
+                    </div>
+                </div>
+                <div class="sidebar__profile">
+                    <div class="sidebar__profile__info">
+                        <div class="sidebar__profile__avatar">
+                            <img class="sidebar__profile__avatar__img" src="./assets/avatar.jpg" alt="Avatar">
+                        </div>
+                        <div class="sidebar__profile__name">User_1</div>
+                    </div>
+                    <div class="sidebar__profile__logout">
+                        <img class="sidebar__profile__logout__img" src="./assets/logout.svg" alt="Log out">
+                    </div>
                 </div>
             </div>
-            <div class="sidebar__profile"></div>
-        </section>
-        <section class="chat__wrapper">
-            <div class="chat__select_model">GPT 6</div>
-            <div class="chat__messages"></div>
-            <div class="chat__message_input"></div>
-        </section>
+            <div class="chat__wrapper">
+                <div class="chat__select_model">GPT 6</div>
+                <div class="chat__messages"></div>
+                <div class="chat__message_input"></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
