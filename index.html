@@ -14,35 +14,34 @@
     <script src="index.js"></script>
     <div class="container">
         <header class="header__mobile">
-            <div class="hamburger">HM</div>
+            <img class="hamburger" src="./assets/hamburger.svg" alt="Menu icon">
             <div class="logo">
                 <img src="./assets/logo.png" alt="ChatABC logo">
             </div>
         </header>
         <div class="content__wrapper">
             <div class="sidebar__wrapper">
-                <div class="logo">
-                    <img src="./assets/logo.png" alt="ChatABC logo">
-                </div>
-                <div class="sidebar__options">
-                    <button class="sidebar__options__btn__new-chat">New chat</button>
-                    <button class="sidebar__options__btn__search">Search</button>
-                    <button class="sidebar__options__btn__new-project">New project</button>
-                </div>
-                <div class="sidebar__history">
-                    <h2>History</h2>
-                    <hr class="divider">
-                    <div class="history__list">
-                        <a class="history__item">Creating a responsive web interface</a>
-                        <a class="history__item">Egg boiling tutorial</a>
-                        <a class="history__item">Passing university classes</a>
-                        <a class="history__item">Creating a responsive web interface</a>
-                        <a class="history__item">Egg boiling tutorial</a>
-                        <a class="history__item">Passing university classes</a>
-                        <a class="history__item">Creating a responsive web interface</a>
-                        <a class="history__item">Egg boiling tutorial</a>
-                        <a class="history__item">Passing university classes</a>
-                        <a class="history__item">Passing university classes</a>
+                <div class="sidebar__items">
+                    <div class="logo">
+                        <img src="./assets/logo.png" alt="ChatABC logo">
+                    </div>
+                    <div class="sidebar__options">
+                        <button class="sidebar__options__btn__new-chat">New chat</button>
+                        <button class="sidebar__options__btn__search">Search</button>
+                        <button class="sidebar__options__btn__new-project">New project</button>
+                        <button class="history__btn">History</button>
+                    </div>
+                    <div class="sidebar__history">
+                        <h2>History</h2>
+                        <hr class="divider">
+                        <div class="history__list">
+                            <a class="history__item">Creating a responsive web interface</a>
+                            <a class="history__item">Egg boiling tutorial</a>
+                            <a class="history__item">Passing university classes</a>
+                            <a class="history__item">Average wage in Lithuania</a>
+                            <a class="history__item">Changing the background in Photoshop</a>
+                            <a class="history__item">Euroleague schedule</a>
+                        </div>
                     </div>
                 </div>
                 <div class="sidebar__profile">
@@ -59,8 +58,19 @@
             </div>
             <div class="chat__wrapper">
                 <div class="chat__select_model">GPT 6</div>
-                <div class="chat__messages"></div>
-                <div class="chat__message_input"></div>
+                <div class="chat__messages">
+                    <div class="chat__messages__message"><p class="message-text">Hello! This is a message.</p></div>
+                    <div class="chat__messages__message"><p class="message-text">This is a response.</p></div>
+                    <div class="chat__messages__message"><p class="message-text">This is another message.</p></div>
+                    <div class="chat__messages__message"><p class="message-text">This is another response.</p></div>
+                </div>
+                <div class="chat__message">
+                    <input type="text" class="chat__message__input" placeholder="Type your message here...">
+                    <button class="chat__message__send_button">
+                        <img class="chat__message__send_icon" src="./assets/send.svg" alt="Send icon">
+                        <span class="send_text">Send</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
