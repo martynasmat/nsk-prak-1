@@ -143,8 +143,12 @@ h2 {
     width: 100%;
     grid-template-rows: 8fr 1fr;
     padding: var(--padding);
-    background: var(--clr-main);
     gap: var(--gap-lg);
+
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .sidebar__items {
@@ -173,6 +177,10 @@ h2 {
     border: 1px solid white;
     transition: background 0.2s, transform 0.2s;
     color: white;
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .history__btn {
@@ -224,10 +232,12 @@ h2 {
     justify-content: flex-start;
     align-items: center;
     padding: var(--padding-sm);
-    border: 1px solid var(--clr-hover);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     transition: background 0.2s, transform 0.2s;
     max-height: 64px;
     font-size: var(--fs-sm);
+
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .history__item:hover {
@@ -285,12 +295,16 @@ h2 {
 /* Chat */
 
 .chat__wrapper {
-    background: var(--clr-main);
     width: 100%;
     height: 100%;
     padding: var(--padding);
     display: grid;
     grid-template-rows: 1fr 9fr 1fr;
+
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .chat__select_model {
@@ -307,10 +321,16 @@ h2 {
 
 .chat__message__input {
     margin: 0;
-    padding: 4px;
+    padding: 8px;
     min-width: 80%;
     height: 2.5rem;
     outline: none;
+    border: none;
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
 }
 
 .chat__message__send_button {
@@ -319,9 +339,12 @@ h2 {
     width: 15%;
     justify-content: center;
     align-items: center;
-    background: var(--clr-main);
     padding: var(--padding-sm);
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+
     transition: background 0.2s, transform 0.2s;
     color: white;
 }
@@ -370,7 +393,11 @@ h2 {
 .chat__messages__message:nth-child(2n+1) {
     align-self: flex-start;
     color: var(--clr-hover);
-    border: 1px solid var(--clr-hover);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     padding: var(--padding-sm);
 }
 
@@ -381,7 +408,7 @@ h2 {
     padding: var(--padding-sm);
 }
 
-@media (max-height: 1150px) {
+@media (max-height: 858px) {
     .sidebar__history {
         display: none;
     }
@@ -401,11 +428,14 @@ h2 {
         justify-content: center;
         align-items: center;
         width: 100%;
-        background: var(--clr-main);
         padding: var(--padding-sm);
         border: 1px solid white;
         transition: background 0.2s, transform 0.2s;
         color: white;
+
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
     }
 }
 
